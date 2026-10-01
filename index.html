@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mat'aam Yusra · Haramous, Djibouti</title>
+<meta name="description" content="Mat'aam Yusra in Haramous, Djibouti. Biryani, pilau, saloona, chapati and more. Open 7:00 am to 4:00 pm. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --turmeric:#F2B632; --sea:#0D4A57; --ink:#14252A; --page:#FFFFFF;
+  --muted:#5B6B6F; --line:#E3DCC8; --chili:#B8361F; --card:#FFF6DC;
+  --wa:#1F8A4C;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --page:#0F1D21; --ink:#F3EEE2; --muted:#A9B6B8; --line:#2C3E43;
+    --card:#17292E; --sea:#F2B632; --chili:#F08A6C;
+  }
+}
+:root[data-theme="dark"]{
+  --page:#0F1D21; --ink:#F3EEE2; --muted:#A9B6B8; --line:#2C3E43;
+  --card:#17292E; --sea:#F2B632; --chili:#F08A6C;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--page);color:var(--ink);
+  font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:1.0625rem;line-height:1.55;padding-bottom:5.5rem}
+h1,h2,h3{font-family:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--chili);outline-offset:3px;border-radius:4px}
+
+.hero{background:var(--turmeric);color:#14252A;padding:3rem 1.25rem 2.5rem;overflow:hidden;position:relative}
+.hero-in{max-width:46rem;margin:0 auto;position:relative}
+.place{font-weight:700;font-size:1rem;margin:0 0 .75rem}
+.hero h1{font-weight:800;font-size:clamp(3.4rem,15vw,7rem);line-height:.88;letter-spacing:-.02em}
+.hero h1 span{display:block}
+.hero p.lead{font-size:1.2rem;max-width:30rem;margin:1.25rem 0 1.5rem}
+.hours{display:inline-flex;gap:.6rem;align-items:center;background:#14252A;color:#F2B632;
+  padding:.55rem 1rem;border-radius:999px;font-weight:700}
+.hours .dot{width:.6rem;height:.6rem;border-radius:50%;background:#7BD88F}
+.hours.closed .dot{background:#F08A6C}
+.pot{position:absolute;right:-2.5rem;bottom:-3.5rem;width:13rem;opacity:.9;pointer-events:none}
+
+main{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 1rem}
+.menu-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:.5rem}
+.menu-head h2{font-size:2.2rem;color:var(--sea)}
+.cur{color:var(--muted);font-size:.95rem}
+.group{margin-top:2rem}
+.group h3{font-size:1.25rem;font-weight:500;color:var(--muted);margin-bottom:.4rem}
+ul.items{list-style:none;margin:0;padding:0}
+.item{display:flex;align-items:baseline;gap:.5rem;padding:.75rem 0;border-bottom:1px dashed var(--line)}
+.item .name{font-weight:700}
+.item .note{display:block;font-weight:400;color:var(--muted);font-size:.95rem}
+.item .lead{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-.3rem);min-width:1rem}
+.item .price{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.25rem;color:var(--chili);white-space:nowrap}
+.item .price.ask{font-family:inherit;font-size:.95rem;font-weight:700}
+
+.visit{margin:3rem auto 0;background:var(--card);border-radius:1.25rem;padding:1.5rem}
+.visit h2{font-size:1.6rem;color:var(--sea);margin-bottom:1rem}
+.visit dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.25rem}
+.visit dt{color:var(--muted)}
+.visit dd{margin:0;font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:2rem 1rem}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;gap:.6rem;justify-content:center;
+  padding:.75rem 1rem calc(.75rem + env(safe-area-inset-bottom,0px));
+  background:color-mix(in srgb,var(--page) 88%,transparent);backdrop-filter:blur(8px);
+  border-top:1px solid var(--line)}
+.btn{flex:1;max-width:16rem;text-align:center;text-decoration:none;font-weight:700;
+  padding:.85rem 1rem;border-radius:.8rem;font-size:1.05rem}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.call{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+@media (min-width:700px){.pot{width:20rem;right:-1rem}}
+@media (prefers-reduced-motion:no-preference){
+  .steam path{animation:rise 3.2s ease-in-out infinite}
+  .steam path:nth-child(2){animation-delay:.8s}.steam path:nth-child(3){animation-delay:1.6s}
+  @keyframes rise{0%{opacity:0;transform:translateY(8px)}40%{opacity:.8}100%{opacity:0;transform:translateY(-14px)}}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <p class="place">Haramous, Djibouti</p>
+    <h1><span>Mat'aam</span><span>Yusra</span></h1>
+    <p class="lead">Biryani, pilau, saloona and chapati, cooked fresh every morning. Order on WhatsApp or come and eat with us.</p>
+    <span class="hours" id="hours"><span class="dot" aria-hidden="true"></span><span id="hours-text">Open 7:00 am – 4:00 pm</span></span>
+  </div>
+  <svg class="pot" viewBox="0 0 200 200" aria-hidden="true">
+    <g class="steam" fill="none" stroke="#14252A" stroke-width="5" stroke-linecap="round">
+      <path d="M70 70c-10-12 10-18 0-32"/><path d="M100 64c-10-12 10-18 0-32"/><path d="M130 70c-10-12 10-18 0-32"/>
+    </g>
+    <path d="M30 92h140l-12 78a14 14 0 0 1-14 12H56a14 14 0 0 1-14-12z" fill="#14252A"/>
+    <rect x="20" y="84" width="160" height="14" rx="7" fill="#B8361F"/>
+    <circle cx="100" cy="132" r="18" fill="#F2B632"/>
+  </svg>
+</header>
+
+<main>
+  <div class="menu-head">
+    <h2>Menu</h2>
+    <span class="cur">Prices in Djibouti francs (DJF)</span>
+  </div>
+
+  <section class="group" aria-labelledby="g-rice">
+    <h3 id="g-rice">Rice dishes</h3>
+    <ul class="items">
+      <li class="item"><span class="name">Biryani<span class="note">Fish or chicken</span></span><span class="lead"></span><span class="price">1,200</span></li>
+      <li class="item"><span class="name">Pilau<span class="note">Chicken or beef</span></span><span class="lead"></span><span class="price">1,200</span></li>
+      <li class="item"><span class="name">White rice &amp; chicken saloona</span><span class="lead"></span><span class="price">1,000</span></li>
+      <li class="item"><span class="name">White rice &amp; fish saloona</span><span class="lead"></span><span class="price">1,000</span></li>
+      <li class="item"><span class="name">White rice &amp; chicken curry</span><span class="lead"></span><span class="price">1,000</span></li>
+    </ul>
+  </section>
+
+  <section class="group" aria-labelledby="g-bread">
+    <h3 id="g-bread">With bread</h3>
+    <ul class="items">
+      <li class="item"><span class="name">Chapati with minced meat</span><span class="lead"></span><span class="price">1,000</span></li>
+      <li class="item"><span class="name">Naan &amp; chicken curry</span><span class="lead"></span><span class="price">1,200</span></li>
+      <li class="item"><span class="name">Chicken tikka (¼)<span class="note">With flat bread and lentils</span></span><span class="lead"></span><span class="price ask">Ask us</span></li>
+    </ul>
+  </section>
+
+  <section class="group" aria-labelledby="g-fast">
+    <h3 id="g-fast">Burgers &amp; sides</h3>
+    <ul class="items">
+      <li class="item"><span class="name">Chicken burger</span><span class="lead"></span><span class="price">500</span></li>
+      <li class="item"><span class="name">Fries</span><span class="lead"></span><span class="price">250</span></li>
+    </ul>
+  </section>
+
+  <section class="visit" aria-labelledby="visit-h">
+    <h2 id="visit-h">Find us</h2>
+    <dl>
+      <dt>Where</dt><dd>Haramous, Djibouti</dd>
+      <dt>Hours</dt><dd>7:00 am – 4:00 pm</dd>
+      <dt>WhatsApp</dt><dd><a href="https://wa.me/254707524393">+254 707 524 393</a></dd>
+      <dt>Calls</dt><dd><a href="tel:+25377179842">+253 77 17 98 42</a></dd>
+    </dl>
+  </section>
+</main>
+
+<footer>© Mat'aam Yusra, Haramous</footer>
+
+<nav class="bar" aria-label="Order">
+  <a class="btn wa" href="https://wa.me/254707524393?text=Hello%20Mat'aam%20Yusra%2C%20I%27d%20like%20to%20order%3A%20">Order on WhatsApp</a>
+  <a class="btn call" href="tel:+25377179842">Call</a>
+</nav>
+
+<script>
+(function(){
+  try{
+    // Djibouti is UTC+3 all year
+    var now=new Date(), h=(now.getUTCHours()+3)%24, m=now.getUTCMinutes();
+    var mins=h*60+m, open=mins>=420 && mins<960;
+    var el=document.getElementById('hours'), t=document.getElementById('hours-text');
+    if(open){t.textContent='Open now · until 4:00 pm';}
+    else{el.classList.add('closed');t.textContent='Closed now · opens 7:00 am';}
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
